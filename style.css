@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+header {
+    background-color: #1da1f2;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.tituloCabecalho {
+    color: white;
+}
+
+.formulario {
+    align-items: center;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*min-height: 80vh; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+textarea, input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1da1f2; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d95e8; 
+}
+
+#postagensContainer {
+    margin-top: 20px;
+}
+
+.postagem {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.postagem h3 {
+    margin: 0 0 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.editar, button.apagar {
+    background-color: #1da1f2; 
+    color: white;
+}
+
+button.editar:hover {
+    background-color: #0d95e8; 
+}
+
+button.apagar {
+    background-color: #DC3545;
+}
+
+button.apagar:hover {
+    background-color: #c82333;
+}

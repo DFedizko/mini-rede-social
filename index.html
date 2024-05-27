@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Rede Social</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="tituloCabecalho">Mini Rede Social</h1>
+    </header>
+    <div class="conteiner">
+
+        
+        <!------------- Título e Campos para postar texto ---------------->
+        <div class="formulario">
+            <form id="formPostagem">
+                <label for="textoPostagem">Digite seu post:</label>
+                <textarea id="textoPostagem" placeholder="O que você está pensando hoje?" required></textarea>
+        <!------------- Título e Campos para postar texto ---------------->
+                
+    
+                <!------------- Seleção de categoria ---------------->
+                <label for="categoriaPostagem">Categoria:</label>
+                <select id="categoriaPostagem">
+                    <option value="Todos">Todos</option>
+                    <option value="Eventos">Eventos</option>
+                    <option value="Dicas">Dicas</option>
+                    <option value="Notícias">Notícias</option> 
+                </select>
+                <!------------- Seleção de categoria ---------------->
+    
+    
+                <!-----Campos de URLs de imagens e botão Postar------>
+                <label for="imagem1">Insira uma imagem (URL):</label>
+                <input type="text" id="imagem1" placeholder="Insira a url aqui">
+                <label for="imagem2">Insira uma imagem (URL):</label>
+                <input type="text" id="imagem2" placeholder="Insira a url aqui">
+                <label for="imagem3">Insira uma imagem (URL):</label>
+                <input type="text" id="imagem3" placeholder="Insira a url aqui">
+                <button type="submit">Postar</button>
+                <!-----Campos de URLs de imagens e botão Postar------>
+                
+            </form>
+    
+    
+            <!---------------- Filtro da Categoria ------------------>
+            <div>
+                <label for="filtroCategoria">Filtrar por categoria:</label>
+                <select id="filtroCategoria" onchange="filtrarPostagens()">
+                    <option value="Todos">Todos</option>
+                    <option value="Eventos">Eventos</option>
+                    <option value="Dicas">Dicas</option>
+                    <option value="Notícias">Notícias</option>
+                </select>
+            </div>
+            <!---------------- Filtro da Categoria ------------------>
+    
+    
+            <div id="postagensContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
